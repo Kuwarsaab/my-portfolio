@@ -2,32 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* css for the custom font */
+.dm-mono-light {
+  font-family: 'DM Mono', monospace;
+  font-weight: 300;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dm-mono-regular {
+  font-family: 'DM Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.dm-mono-medium {
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.dm-mono-light-italic {
+  font-family: 'DM Mono', monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.dm-mono-regular-italic {
+  font-family: 'DM Mono', monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.dm-mono-medium-italic {
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+/*css for the custom font end */
+
+/* CSS for custom scrollbar */
+html {
+  --primary-color:"#64FFDA";
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  background-color: #112240;
+}
+
+::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #112240;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #64FFDA;
 }
