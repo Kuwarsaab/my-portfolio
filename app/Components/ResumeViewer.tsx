@@ -7,13 +7,8 @@ import { Info } from '../User';
 const ResumeViewer = (props: any) => {
   return (
     <Modal.Root
-      scrollAreaComponent={ScrollArea.Autosize}
-      size="auto"
-      className="font-mono"
-      opened={props.opened}
-      onClose={props.close}
-    >
-      <Modal.Overlay />
+      scrollAreaComponent={ScrollArea.Autosize} size="auto" className='font-mono' opened={props.opened} onClose={props.close} >
+      <Modal.Overlay className="!backdrop-opacity-85 blur-sm"/>
       <Modal.Content className="!rounded-3xl">
         <Modal.Header className="!bg-bgColor !border-primaryColor font-bold !border-2 !border-b-0 !rounded-tl-3xl !rounded-tr-3xl">
           <Modal.Title
