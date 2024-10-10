@@ -12,7 +12,7 @@ const TimelineItem = (items: any) => {
     >
       <div className='border flex flex-col gap-2 border-primaryColor p-4 rounded-2xl !shadow-[0_0_10px_0px_#64FFDA50] '>
           <div className='flex gap-2 items-center'>
-            <img className='rounded-lg w-16' src={`/${item.company}.png`} alt="Company" />
+            <img className='rounded-lg w-16' src={`${item.company}.png`} alt="Company" />
             <div className='flex flex-col'>
               <div className='text-white text-2xl font-semibold'>{item.role}</div>
               <div className='text-lg font-semibold text-textColor'>{item.company} &#x2022; {item.date}</div>

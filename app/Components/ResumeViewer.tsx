@@ -22,7 +22,7 @@ const ResumeViewer = (props: any) => {
           >
             Resume
             <Tooltip color='#64FFDA' className='!text-bgColor' position='right' label="Download" offset={5}> 
-            <ActionIcon className='!text-primaryColor' component='a' href='/Akash-resume.pdf' download={Info.name} variant='outline' color='#64FFDA' aria-label='Settings'>
+            <ActionIcon className='!text-primaryColor' component='a' href='Akash-resume.pdf' download={Info.name} variant='outline' color='#64FFDA' aria-label='Settings'>
               <IconArrowBigDownLineFilled />
             </ActionIcon>
             </Tooltip>
@@ -34,7 +34,7 @@ const ResumeViewer = (props: any) => {
           />
         </Modal.Header>
         <Modal.Body className="!bg-bgColor !pt-2 !border-primaryColor !border-2 !border-t-0 !rounded-bl-3xl !rounded-br-3xl">
-          <Document file="/Akash-resume.pdf">
+          <Document file="Akash-resume.pdf">
             <Page
               pageNumber={1}
               renderTextLayer={false}

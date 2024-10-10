@@ -116,7 +116,7 @@ const About = () => {
               color="#64ffda"
               size="lg"
               rightSection={<IconDownload size={20} />}
-              href="/Akash-resume.pdf"
+              href="Akash-resume.pdf"
               download={Info.name}
             >
               Download
@@ -129,7 +129,7 @@ const About = () => {
         >
           <NeonGradientCard className="w-[325px] h-[325px] items-center justify-center text-center">
             <img
-              src="/my1.jpg"
+              src="my1.jpg"
               alt="Akash Verma"
               className="w-full h-full rounded-full"
             />
