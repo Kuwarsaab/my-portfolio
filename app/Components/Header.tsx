@@ -14,10 +14,11 @@ const navLinks = (col: Boolean, clicked:any) => {
   const handleClick = () => {
     if(clicked)clicked();
   }
-  return links.map((link) => {
+  return links.map((link, index) => {
     return (
       <a
-      onClick={handleClick}
+        key={index}
+        onClick={handleClick}
         className={`${
           col ? 'flex flex-col items-center' : ''
         } hover:text-primaryColor text-lg font-mono text-textColor`}

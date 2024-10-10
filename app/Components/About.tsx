@@ -1,10 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
 import { Info } from '../User';
-//@ts-ignore
-import DOTS from 'vanta/src/vanta.dots';
-//@ts-ignore
-import TRUNK from 'vanta/src/vanta.trunk';
 import Typewriter from 'typewriter-effect';
 import { Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
@@ -14,55 +9,7 @@ import Particles from './magicui/Particles';
 import { NeonGradientCard } from './magicui/neon-gradient-card';
 
 const About = () => {
-  const [dots, setDots] = useState<any>(null);
-  const [trunk, setTrunk] = useState<any>(null);
   const [opened, { open, close }] = useDisclosure(false);
-  useEffect(() => {
-    if (!dots) {
-      setDots(
-        DOTS({
-          el: '#bg',
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0x64ffda,
-          color2: 0x8892b0,
-          backgroundColor: 0x112240,
-          size: 3,
-          spacing: 20,
-          showLines: false,
-        })
-      );
-    }
-
-    if (!trunk) {
-      setTrunk(
-        TRUNK({
-          el: '#photo',
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0x64ffda,
-          backgroundColor: 0x112240,
-          spacing: 0,
-          chaos: 4.0,
-        })
-      );
-    }
-    return () => {
-      if (dots) dots.destroy();
-      if (trunk) trunk.destroy();
-    };
-  }, []);
-
   return (
     <>
       <div
@@ -84,7 +31,7 @@ const About = () => {
             {Info.name}
           </div>
           <div className="text-white text-4xl flex">
-            I'm a&nbsp;
+            I&apos;m a&nbsp;
             <span className="text-primaryColor font-semibold">
               <Typewriter
                 options={{

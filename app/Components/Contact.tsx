@@ -50,7 +50,7 @@ const Contact = () => {
       </h1>
       <div data-aos="fade-left" data-aos-duration="8000" className="flex flex-col items-center">
         <div className="w-[70%] shadow-[0_0_10px_0_#64FFDA50] flex flex-col gap-6 border border-primaryColor rounded-3xl p-8">
-          <div className="text-2xl text-white font-semibold">Let's Connect</div>
+          <div className="text-2xl text-white font-semibold">Let&apos;s Connect</div>
           <FloatingInput id="name" name="Name" value={formData.name} handleChange={handleChange} error={formError.name}/>
           <FloatingInput id="email" name="Email" value={formData.email} handleChange={handleChange} error={formError.email}/>
           <FloatingInput id="phone" name="Phone Number" value={formData.phone} handleChange={handleChange} error={formError.phone}/>

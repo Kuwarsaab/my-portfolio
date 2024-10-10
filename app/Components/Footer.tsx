@@ -1,9 +1,10 @@
 import { Info, socialLinks } from '../User';
 
 const Footer = () => {
-  const socialIcons = socialLinks.map((socialLink) => {
+  const socialIcons = socialLinks.map((socialLink, index) => {
     return (
       <a
+        key={index}
         href={`${socialLink.link}`}
         className="font-mono text-lg hover:text-primaryColor hover:-scale-105 transition-transform duration-300 ease-in-out"
         target="_blank"

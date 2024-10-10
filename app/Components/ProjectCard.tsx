@@ -60,7 +60,7 @@ const ProjectCard = (props: any) => {
           {props.technologies.map(
             (tech: string, index: number) =>
               index < 3 && (
-                <Badge variant="light" size="lg" color="#64FFDA">
+                <Badge key={index} variant="light" size="lg" color="#64FFDA">
                   {tech}
                 </Badge>
               )
